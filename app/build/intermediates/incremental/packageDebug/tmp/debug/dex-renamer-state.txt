@@ -1,0 +1,4 @@
+#Thu Dec 22 15:52:39 EST 2022
+base.0=/Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

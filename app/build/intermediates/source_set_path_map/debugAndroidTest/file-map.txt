@@ -1,0 +1,9 @@
+com.example.cookingunitconverter.test.app-core-1.5.0-0 /Users/kelly/.gradle/caches/transforms-3/3be9fbd2504f0d58fdb6d1538a172410/transformed/core-1.5.0/res
+com.example.cookingunitconverter.test.app-annotation-experimental-1.3.0-1 /Users/kelly/.gradle/caches/transforms-3/c3ccb551a96d7464cbc7a567310b2d43/transformed/annotation-experimental-1.3.0/res
+com.example.cookingunitconverter.test.app-androidTest-2 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/generated/res/resValues/androidTest/debug
+com.example.cookingunitconverter.test.app-androidTest-3 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/generated/res/rs/androidTest/debug
+com.example.cookingunitconverter.test.app-mergeDebugAndroidTestResources-4 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.cookingunitconverter.test.app-mergeDebugAndroidTestResources-5 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.cookingunitconverter.test.app-merged_res-6 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/intermediates/merged_res/debugAndroidTest
+com.example.cookingunitconverter.test.app-androidTest-7 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/src/androidTest/res
+com.example.cookingunitconverter.test.app-androidTestDebug-8 /Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/src/androidTestDebug/res

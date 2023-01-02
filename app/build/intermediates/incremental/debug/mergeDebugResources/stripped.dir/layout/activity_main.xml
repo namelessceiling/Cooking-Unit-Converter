@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amount_to_be_converted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/base_case"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount_edit_text_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_unit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amount_to_be_converted"
+            style="@style/Widget.CookingUnitConverter.TextView"/>
+
+        <RadioGroup
+            android:id="@+id/base_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/base_cup"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/converted_unit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/from">
+
+            <RadioButton
+                android:id="@+id/base_cup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cup" />
+
+            <RadioButton
+                android:id="@+id/base_fluid_oz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fluid_ounces" />
+
+            <RadioButton
+                android:id="@+id/base_gallons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallons" />
+
+            <RadioButton
+                android:id="@+id/base_pints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pints" />
+
+            <RadioButton
+                android:id="@+id/base_quarts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quarts" />
+
+            <RadioButton
+                android:id="@+id/base_tablespoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tablespoon" />
+
+            <RadioButton
+                android:id="@+id/base_teaspoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teaspoon" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_unit"
+            app:layout_constraintStart_toStartOf="@id/converted_unit"
+            app:layout_constraintTop_toBottomOf="@id/amount_to_be_converted"
+            style="@style/Widget.CookingUnitConverter.TextView"/>
+
+        <RadioGroup
+            android:id="@+id/converted_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/converted_cup"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/base_unit"
+            app:layout_constraintTop_toBottomOf="@id/to">
+
+            <RadioButton
+                android:id="@+id/converted_cup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cup" />
+
+            <RadioButton
+                android:id="@+id/converted_fluid_oz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fluid_ounces" />
+
+            <RadioButton
+                android:id="@+id/converted_gallons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gallons" />
+
+            <RadioButton
+                android:id="@+id/converted_pints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pints" />
+
+            <RadioButton
+                android:id="@+id/converted_quarts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quarts" />
+
+            <RadioButton
+                android:id="@+id/converted_tablespoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tablespoon" />
+
+            <RadioButton
+                android:id="@+id/converted_teaspoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teaspoon" />
+        </RadioGroup>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/round_up_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/round_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/base_unit" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/round_up_switch" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Result"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calculate_button"
+            style="@style/Widget.CookingUnitConverter.TextView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

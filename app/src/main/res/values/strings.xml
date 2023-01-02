@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Cooking Unit Converter</string>
+    <string name="base_case">Enter the amount you want converted</string>
+    <string name="from_unit">From</string>
+    <string name="to_unit">To</string>
+    <string name="cup">Cup(s)</string>
+    <string name="fluid_ounces">Fluid Ounces</string>
+    <string name="gallons">Gallon(s)</string>
+    <string name="pints">Pint(s)</string>
+    <string name="quarts">Quart(s)</string>
+    <string name="tablespoon">Tablespoon(s)</string>
+    <string name="teaspoon">Teaspoon(s)</string>
+    <string name="round_up">Round up?</string>
+    <string name="calculate">Calculate</string>
+    <string name="result">Result: %s</string>
+</resources>

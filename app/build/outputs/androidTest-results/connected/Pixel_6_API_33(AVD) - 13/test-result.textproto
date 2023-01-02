@@ -1,0 +1,68 @@
+# 2022-12-23T04:06:35.161Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ExampleInstrumentedTest"
+    test_package: "com.example.cookingunitconverter"
+    test_method: "calculate_gallons_to_cups_without_rounding"
+    start_time {
+      seconds: 1671768391
+      nanos: 297000000
+    }
+    end_time {
+      seconds: 1671768393
+      nanos: 922000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/outputs/androidTest-results/connected/Pixel_6_API_33(AVD) - 13/logcat-com.example.cookingunitconverter.ExampleInstrumentedTest-calculate_gallons_to_cups_without_rounding.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/outputs/androidTest-results/connected/Pixel_6_API_33(AVD) - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/outputs/androidTest-results/connected/Pixel_6_API_33(AVD) - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/outputs/androidTest-results/connected/Pixel_6_API_33(AVD) - 13/cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/kelly/AndroidStudioProjects/CookingUnitConverter/app/build/outputs/androidTest-results/connected/Pixel_6_API_33(AVD) - 13/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
