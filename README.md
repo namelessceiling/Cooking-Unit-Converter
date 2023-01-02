@@ -1,6 +1,6 @@
 # Cooking-Unit-Converter
 
-Made with XML
+Written in XML and Kotlin
 
 A simple app that converts common cooking units to other units
 
